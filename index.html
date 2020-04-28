@@ -35,8 +35,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                <a><span class="fa fa-sign-in" id="loginButton"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -283,7 +282,17 @@
 </script>-->
 
 <script>
+
+
     $(document).ready(function(){
+      $("#loginButton").click(function(){
+        $("#loginModal").modal();
+        console.log("hey you are in login fucntion");
+      });
+
+
+
+
         $("#mycarousel").carousel( { interval: 2000 } );
         $("#carouselButton").click(function(){
               if ($("#carouselButton").children("span").hasClass('fa-pause')) {
