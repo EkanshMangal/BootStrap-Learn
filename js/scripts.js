@@ -1,4 +1,10 @@
-
+// <!--<script>
+//
+// data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong> data-placement="bottom""
+// $(document).ready(function(){
+//     $('[data-toggle="tooltip"]').tooltip();
+// });
+// </script>-->
     $(document).ready(function(){
       $("#loginButton").click(function(){
         $("#loginModal").modal();
