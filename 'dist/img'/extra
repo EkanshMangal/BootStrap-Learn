@@ -1,0 +1,11 @@
+cwd: process.cwd(),
+env: process.env,
+stdio: ['pipe', process.stdout, process.stderr]
+})
+.on('close', childClose);
+child.cmd = cmd
+children.push(child)
+});
+
+// close all children on ctrl+c
+process.on('SIGINT', close)
